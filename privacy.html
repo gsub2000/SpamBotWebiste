@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCT DETAILS</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRIVACY POLICY</a>
+  </div>
+</div>
+
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="product">
+    <h1 class="w3-wide w3-center">PRIVACY POLICY</h1>
+    <p class="w3-opacity w3-center"><i>Data Usage and Terms of Agreement</i></p>
+    <p class="w3-justify w3-center">Privacy Policy
+
+        This privacy policy ("policy") will help you understand how SpanBot uses and protects the data you provide to us when you visit and use the extension.
+        We reserve the right to change this policy at any given time, of which you will be promptly updated. If you want to make sure that you are up to date with the latest changes, we advise you to frequently visit this page.</p> 
+        
+        <h5 class="w3-center">What User Data We Collect</h5>        
+        <p>When you use Gmail with the extension on, we may collect the following data:</p>
+            
+        <div class="w3-left" style="max-width:800px">
+            <p> <ul>
+                <li>Email Subject Data</li>
+                <li>Email Sender</li>
+              
+            </ul></p>
+           
+        </div>
+            
+        <div class="w3-container w3-content w3-padding-64">
+            <p class="w3-justify w3-center">However, the data is only temporarily accessed to be parsed by the AI machine, and is not saved to any location permanently. 
+        
+        Why We Collect Your Data
+        
+        We are collecting your data for several reasons:
+        
+            To better understand your needs.
+            To improve our services and products.
+            To send you promotional emails containing the information we think you will find interesting.
+            To contact you to fill out surveys and participate in other types of market research.
+            To customize our website according to your online behavior and personal preferences.
+        
+        Safeguarding and Securing the Data
+        
+        [name] is committed to securing your data and keeping it confidential. [name] has done all in its power to prevent data theft, unauthorized access, and disclosure by implementing the latest technologies and software, which help us safeguard all the information we collect online.
+        
+        Our Cookie Policy
+        
+        Once you agree to allow our website to use cookies, you also agree to use the data it collects regarding your online behavior (analyze web traffic, web pages you spend the most time on, and websites you visit).
+        
+        The data we collect by using cookies is used to customize our website to your needs. After we use the data for statistical analysis, the data is completely removed from our systems.
+        
+        Please note that cookies don't allow us to gain control of your computer in any way. They are strictly used to monitor which pages you find useful and which you do not so that we can provide a better experience for you.
+        
+        If you want to disable cookies, you can do it by accessing the settings of your internet browser. (Provide links for cookie settings for major internet browsers).
+        
+        Links to Other Websites
+        
+        Our website contains links that lead to other websites. If you click on these links [name] is not held responsible for your data and privacy protection. Visiting those websites is not governed by this privacy policy agreement. Make sure to read the privacy policy documentation of the website you go to from our website.
+        
+        Restricting the Collection of your Personal Data
+        
+        At some point, you might wish to restrict the use and collection of your personal data. You can achieve this by doing the following:
+        
+            When you are filling the forms on the website, make sure to check if there is a box which you can leave unchecked, if you don't want to disclose your personal information.
+            If you have already agreed to share your information with us, feel free to contact us via email and we will be more than happy to change this for you.
+        
+        [name] will not lease, sell or distribute your personal information to any third parties, unless we have your permission. We might do so if the law forces us. Your personal information will be used when we need to send you promotional materials if you agree to this privacy policy. </p>
+</div></div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#product" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCT DETAILS</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#pp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIVACY POLICY</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
